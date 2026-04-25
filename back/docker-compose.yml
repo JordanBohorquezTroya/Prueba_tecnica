@@ -1,0 +1,9 @@
+services:
+  oracle:
+    image: gvenzl/oracle-xe
+    container_name: oracle-prueba
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: 123456
+    restart: always
